@@ -45,7 +45,7 @@ a:hover { text-decoration: underline; }
 .extra-news { display: none; }
 .news-list.expanded .extra-news { display: grid; }
 .news-toggle-wrap { display: flex; justify-content: center; }
-.show-more { margin-top: 13px; padding: 0; color: var(--link); border: 0; background: none; font-size: 13px; font-weight: 500; cursor: pointer; }
+.show-more { margin-top: 13px; padding: 0; color: var(--muted); border: 0; background: none; font-size: 13px; font-weight: 500; cursor: pointer; }
 .show-more:hover { text-decoration: underline; }
 .experience-item { display: grid; grid-template-columns: 64px 1fr auto; gap: 18px; align-items: center; padding: 16px; border: 1px solid #eceff1; border-radius: 8px; background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,.02); transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease; }
 .experience-item:hover { transform: translateY(-2px); border-color: #cfd8dc; box-shadow: 0 8px 20px rgba(0,0,0,.08); }
