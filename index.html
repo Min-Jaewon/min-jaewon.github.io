@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Jaewon Min's academic homepage and publications." />
+    <title>Jaewon Min</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Main navigation">
+        <a class="site-name" href="#home">Jaewon Min</a>
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span><span class="sr-only">Open menu</span></button>
+        <div class="nav-links" id="nav-links"><a class="active" href="#home">Home</a><a href="assets/CV_JaewonMin.pdf" download>CV</a></div>
+      </nav>
+    </header>
+
+    <main class="container" id="home">
+      <section class="intro">
+        <div class="profile-photo" aria-label="Profile photo placeholder"><span>YOUR<br />PHOTO</span></div>
+        <div class="intro-copy">
+          <h1>Hello, I'm Jaewon Min</h1>
+          <p>I am an M.S./Ph.D. integrated student at <a href="https://gsai.kaist.ac.kr/">KAIST AI</a>, advised by <a class="plain-link" href="https://cvlab.kaist.ac.kr/members/faculty">Prof. Seungryong Kim</a>. My research interests lie in generative models for vision, with a focus on image/video generation, 3D/4D generation, and geometric foundation models.</p>
+          <div class="profile-links" aria-label="Profile links">
+            <a href="assets/CV_JaewonMin.pdf" download><span class="icon"><i class="fas fa-file"></i></span><span>CV</span></a>
+            <a href="https://scholar.google.com/citations?user=WIiNrmoAAAAJ"><span class="icon"><i class="ai ai-google-scholar"></i></span><span>Scholar</span></a>
+            <a href="#"><span class="icon"><i class="fab fa-github"></i></span><span>GitHub</span></a>
+            <a href="#"><span class="icon"><i class="fab fa-twitter"></i></span><span>X</span></a>
+            <a href="https://www.linkedin.com/in/kr-jaewon-min/"><span class="icon"><i class="fab fa-linkedin"></i></span><span>LinkedIn</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-section" id="news">
+        <h2>News</h2>
+        <div class="news-list">
+          <article class="news-item"><time datetime="2026-06">Jun 2026</time><p>I started as a visiting scholar at <a href="https://www.nyu.edu/">New York University</a>, advised by <a href="https://scholar.google.com/citations?user=YeG8ZM0AAAAJ&amp;hl=en">Prof. Chen Feng</a>.</p></article>
+          <article class="news-item"><time datetime="2026-06">Jun 2026</time><p><a href="https://cvlab-kaist.github.io/UMM_Transferability/">Analysis on UMM transferability</a> has been accepted to <strong>ECCV 2026</strong>.</p></article>
+          <article class="news-item"><time datetime="2026-01">Jan 2026</time><p><a href="https://cvlab-kaist.github.io/TAIR/">TAIR</a> and <a href="https://cvlab-kaist.github.io/NoiseRefine/">NoiseRefine</a> have been accepted to <strong>ICLR 2026</strong>.</p></article>
+          <article class="news-item extra-news"><time datetime="2025-09">Sep 2025</time><p><a href="https://cvlab-kaist.github.io/HeadHunter/">HeadHunter</a> has been accepted to <strong>NeurIPS 2025</strong>.</p></article>
+          <article class="news-item extra-news"><time datetime="2024-07">Jul 2024</time><p><a href="https://cvlab-kaist.github.io/Perturbed-Attention-Guidance/">PAG</a> has been accepted to <strong>ECCV 2024</strong>.</p></article>
+        </div>
+        <div class="news-toggle-wrap"><button class="show-more" id="news-toggle" type="button" aria-expanded="false">Show All News</button></div>
+      </section>
+
+      <section class="page-section" id="experience">
+        <h2>Experience</h2>
+        <div class="experience-list">
+          <article class="experience-item">
+            <a class="experience-logo" href="https://www.nyu.edu/" aria-label="New York University"><img src="assets/logos/NYU.png" alt="NYU logo" /></a>
+            <div class="experience-copy"><h3><a href="https://www.nyu.edu/">New York University</a> <span>New York, USA</span></h3><p>Visiting Scholar</p><small>Advisor: <a href="https://scholar.google.com/citations?user=YeG8ZM0AAAAJ&amp;hl=en">Prof. Chen Feng</a></small></div>
+            <time>Jun. 2026 – Present</time>
+          </article>
+        </div>
+      </section>
+
+      <section class="page-section publications" id="publications">
+        <h2>Publications</h2>
+        <p class="publication-note"><strong>*</strong> denotes equal contribution. &nbsp;·&nbsp; <strong>†</strong> denotes corresponding author.</p>
+        <div class="year-group">
+          <h3 class="year-heading">2026</h3>
+          <article class="paper-card">
+            <figure class="paper-visual"><img src="assets/publications/umm_transfer.png" alt="UMM Transferability teaser" /></figure>
+            <div class="paper-content"><h3><a href="https://cvlab-kaist.github.io/UMM_Transferability/">Transferability Between Understanding and Generation in Unified Multimodal Models</a></h3><p class="authors">Jiwon Kang*, Heeji Yoon, Jaewoo Jung, <strong>Jaewon Min</strong>, Minkyeong Jeon, Biyeon Hwang, Sangwon Jung, Seungryong Kim†</p><div class="venue-row"><span class="venue">ECCV 2026</span></div><div class="paper-links"><a href="https://cvlab-kaist.github.io/UMM_Transferability/"><span class="icon"><i class="fas fa-globe-asia"></i></span><span>Project Page</span></a><a href="https://arxiv.org/abs/2607.04423"><span class="icon"><i class="ai ai-arxiv"></i></span><span>arXiv</span></a><a href="https://github.com/cvlab-kaist/UMM_Transferability"><span class="icon"><i class="fab fa-github"></i></span><span>Code</span></a></div></div>
+          </article>
+          <article class="paper-card">
+            <figure class="paper-visual paper-visual-wide"><video autoplay loop muted playsinline preload="metadata" aria-label="TAIR animated teaser"><source src="assets/publications/tair_grid_thumb.mp4" type="video/mp4" /></video></figure>
+            <div class="paper-content"><h3><a href="https://cvlab-kaist.github.io/TAIR/">Text-Aware Image Restoration with Diffusion Models</a></h3><p class="authors"><strong>Jaewon Min*</strong>, Jin Hyeon Kim*, Paul Hyunbin Cho, Jaeeun Lee, Jihye Park, Minkyu Park, Sangpil Kim†, Hyunhee Park†, Seungryong Kim†</p><div class="venue-row"><span class="venue">ICLR 2026</span><span class="star-badge">200+ GitHub stars</span></div><div class="paper-links"><a href="https://cvlab-kaist.github.io/TAIR/"><span class="icon"><i class="fas fa-globe-asia"></i></span><span>Project Page</span></a><a href="https://arxiv.org/abs/2506.09993"><span class="icon"><i class="ai ai-arxiv"></i></span><span>arXiv</span></a><a href="https://github.com/cvlab-kaist/TAIR"><span class="icon"><i class="fab fa-github"></i></span><span>Code</span></a></div></div>
+          </article>
+          <article class="paper-card">
+            <figure class="paper-visual"><img src="assets/publications/noiserefine_teaser.jpeg" alt="NoiseRefine teaser" /></figure>
+            <div class="paper-content"><h3><a href="https://cvlab-kaist.github.io/NoiseRefine/">A Noise is Worth Diffusion Guidance</a></h3><p class="authors">Donghoon Ahn*, Jiwon Kang*, Sanghyun Lee, <strong>Jaewon Min</strong>, Wooseok Jang, Minjae Kim, Hyungwon Cho, Sayak Paul, SeonHwa Kim, Eunju Cha†, Kyong Hwan Jin†, Seungryong Kim†</p><div class="venue-row"><span class="venue">ICLR 2026</span></div><div class="paper-links"><a href="https://cvlab-kaist.github.io/NoiseRefine/"><span class="icon"><i class="fas fa-globe-asia"></i></span><span>Project Page</span></a><a href="https://arxiv.org/abs/2412.03895"><span class="icon"><i class="ai ai-arxiv"></i></span><span>arXiv</span></a><a href="https://github.com/cvlab-kaist/NoiseRefine"><span class="icon"><i class="fab fa-github"></i></span><span>Code</span></a></div></div>
+          </article>
+        </div>
+        <div class="year-group">
+          <h3 class="year-heading">2025</h3>
+          <article class="paper-card">
+            <figure class="paper-visual paper-visual-tall"><img src="assets/publications/headhunter_teaser_qual.jpg" alt="HeadHunter teaser" /></figure>
+            <div class="paper-content"><h3><a href="https://cvlab-kaist.github.io/HeadHunter/">Where and How to Perturb: On the Design of Perturbation Guidance in Diffusion and Flow Models via Attention Head Selection</a></h3><p class="authors">Donghoon Ahn*, Jiwon Kang*, Sanghyun Lee, Minjae Kim, <strong>Jaewon Min</strong>, Wooseok Jang, Sangwu Lee, Sayak Paul, Susung Hong, Seungryong Kim†</p><div class="venue-row"><span class="venue">NeurIPS 2025</span></div><div class="paper-links"><a href="https://cvlab-kaist.github.io/HeadHunter/"><span class="icon"><i class="fas fa-globe-asia"></i></span><span>Project Page</span></a><a href="https://arxiv.org/abs/2506.10978"><span class="icon"><i class="ai ai-arxiv"></i></span><span>arXiv</span></a><a href="https://github.com/cvlab-kaist/HeadHunter"><span class="icon"><i class="fab fa-github"></i></span><span>Code</span></a></div></div>
+          </article>
+        </div>
+        <div class="year-group">
+          <h3 class="year-heading">2024</h3>
+          <article class="paper-card">
+            <figure class="paper-visual paper-visual-wide"><img src="assets/publications/pag_architecture.png" alt="PAG overall framework" /></figure>
+            <div class="paper-content"><h3><a href="https://cvlab-kaist.github.io/Perturbed-Attention-Guidance/">Self-rectifying diffusion sampling with perturbed-attention guidance</a></h3><p class="authors">Donghoon Ahn*, Hyoungwon Cho*, <strong>Jaewon Min</strong>, Wooseok Jang, Jungwoo Kim, SeonHwa Kim, Hyun Hee Park, Kyong Hwan Jin†, Seungryong Kim†</p><div class="venue-row"><span class="venue">ECCV 2024</span><span class="star-badge">300+ GitHub stars</span></div><div class="paper-links"><a href="https://cvlab-kaist.github.io/Perturbed-Attention-Guidance/"><span class="icon"><i class="fas fa-globe-asia"></i></span><span>Project Page</span></a><a href="https://arxiv.org/abs/2403.17377"><span class="icon"><i class="ai ai-arxiv"></i></span><span>arXiv</span></a><a href="https://github.com/cvlab-kaist/Perturbed-Attention-Guidance"><span class="icon"><i class="fab fa-github"></i></span><span>Code</span></a></div></div>
+          </article>
+        </div>
+        <div class="year-group">
+          <h3 class="year-heading">Preprints</h3>
+          <article class="paper-card">
+            <figure class="paper-visual"><img src="assets/publications/geoface_teaser.png" alt="GeoFace teaser" /></figure>
+            <div class="paper-content"><h3><a href="https://cvlab-kaist.github.io/GeoFace/">GeoFace: Consistent Multi-View Face Generation with Geometry-Constrained Diffusion</a></h3><p class="authors">Yeji Choi, Jinhyeok Choi, <strong>Jaewon Min</strong>, Minkyung Kwon, Jin Hyeon Kim, Seungryong Kim†</p><div class="venue-row"><span class="venue venue-arxiv">arXiv</span></div><div class="paper-links"><a href="https://cvlab-kaist.github.io/GeoFace/"><span class="icon"><i class="fas fa-globe-asia"></i></span><span>Project Page</span></a><a href="https://arxiv.org/abs/2606.27659"><span class="icon"><i class="ai ai-arxiv"></i></span><span>arXiv</span></a><a href="https://github.com/cvlab-kaist/GeoFace"><span class="icon"><i class="fab fa-github"></i></span><span>Code</span></a></div></div>
+          </article>
+          <article class="paper-card">
+            <figure class="paper-visual"><img src="assets/publications/gard_img_000.jpg" alt="GARD teaser" /></figure>
+            <div class="paper-content"><h3><a href="https://cvlab-kaist.github.io/GARD/">GARD: Geometry-Aware Representation Denoising for Robust Multi-view 3D Reconstruction</a></h3><p class="authors">Jin Hyeon Kim*, Jaeeun Lee*, Clare Kim, Kyoungjin Oh, Paul Hyunbin Cho, <strong>Jaewon Min</strong>, Yeji Choi, Jihye Park, Hyunhee Park, Minkyu Park, Seungryong Kim†</p><div class="venue-row"><span class="venue venue-arxiv">arXiv</span></div><div class="paper-links"><a href="https://cvlab-kaist.github.io/GARD/"><span class="icon"><i class="fas fa-globe-asia"></i></span><span>Project Page</span></a><a href="https://arxiv.org/abs/2605.26230"><span class="icon"><i class="ai ai-arxiv"></i></span><span>arXiv</span></a><a href="https://github.com/cvlab-kaist/GARD"><span class="icon"><i class="fab fa-github"></i></span><span>Code</span></a></div></div>
+          </article>
+          <article class="paper-card">
+            <figure class="paper-visual"><img src="assets/publications/daflow_teaser.png" alt="DA-Flow teaser" /></figure>
+            <div class="paper-content"><h3><a href="https://cvlab-kaist.github.io/DA-Flow/">DA-Flow: Degradation-Aware Optical Flow Estimation with Diffusion Models</a></h3><p class="authors"><strong>Jaewon Min</strong>, Jaeeun Lee, Yeji Choi, Paul Hyunbin Cho, Jin Hyeon Kim, Tae-Young Lee, Jongsik Ahn, Hwayeong Lee, Seonghyun Park, Seungryong Kim†</p><div class="venue-row"><span class="venue venue-arxiv">arXiv</span></div><div class="paper-links"><a href="https://cvlab-kaist.github.io/DA-Flow/"><span class="icon"><i class="fas fa-globe-asia"></i></span><span>Project Page</span></a><a href="https://arxiv.org/abs/2603.23499"><span class="icon"><i class="ai ai-arxiv"></i></span><span>arXiv</span></a><a href="https://github.com/cvlab-kaist/DA-Flow"><span class="icon"><i class="fab fa-github"></i></span><span>Code</span></a></div></div>
+          </article>
+          <article class="paper-card">
+            <figure class="paper-visual paper-visual-tall"><img src="assets/publications/unit_teaser.png" alt="UniT teaser" /></figure>
+            <div class="paper-content"><h3><a href="https://cvlab-kaist.github.io/UniT/">Unified Diffusion Transformer for High-fidelity Text-Aware Image Restoration</a></h3><p class="authors">Jin Hyeon Kim, Paul Hyunbin Cho, Claire Kim, <strong>Jaewon Min</strong>, Jaeeun Lee, Yeji Choi, Seungryong Kim†</p><div class="venue-row"><span class="venue venue-arxiv">arXiv</span></div><div class="paper-links"><a href="https://cvlab-kaist.github.io/UniT/"><span class="icon"><i class="fas fa-globe-asia"></i></span><span>Project Page</span></a><a href="https://arxiv.org/abs/2512.08922"><span class="icon"><i class="ai ai-arxiv"></i></span><span>arXiv</span></a><a href="https://github.com/cvlab-kaist/UniT"><span class="icon"><i class="fab fa-github"></i></span><span>Code</span></a></div></div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <div id="teaser-lightbox" class="teaser-modal" aria-hidden="true">
+      <div class="teaser-modal-bg"></div>
+      <div class="teaser-modal-content"></div>
+      <button type="button" class="teaser-modal-close" aria-label="Close">&times;</button>
+    </div>
+    <footer class="footer container">
+      <p>&copy; <span id="current-year"></span> Jaewon Min</p>
+      <div class="footer-links" aria-label="Personal links">
+        <a href="mailto:m.jaewon@kaist.ac.kr" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://scholar.google.com/citations?user=WIiNrmoAAAAJ" aria-label="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+      </div>
+    </footer>
+  </body>
+</html>
