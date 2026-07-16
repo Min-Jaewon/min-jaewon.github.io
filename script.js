@@ -1,23 +1,8 @@
-const menuButton = document.querySelector('.menu-button');
-const navLinks = document.querySelector('.nav-links');
 const newsToggle = document.querySelector('#news-toggle');
 const newsList = document.querySelector('.news-list');
 const teaserModal = document.querySelector('#teaser-lightbox');
 const teaserModalContent = document.querySelector('.teaser-modal-content');
 const teaserModalClose = document.querySelector('.teaser-modal-close');
-
-if (menuButton && navLinks) {
-  menuButton.addEventListener('click', () => {
-    const isOpen = menuButton.getAttribute('aria-expanded') === 'true';
-    menuButton.setAttribute('aria-expanded', String(!isOpen));
-    navLinks.classList.toggle('open', !isOpen);
-  });
-
-  navLinks.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => {
-    menuButton.setAttribute('aria-expanded', 'false');
-    navLinks.classList.remove('open');
-  }));
-}
 
 if (newsToggle && newsList) {
   newsToggle.addEventListener('click', () => {
