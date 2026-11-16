@@ -70,3 +70,26 @@ if (teaserModalClose) teaserModalClose.addEventListener('click', closeTeaserModa
 document.addEventListener('keydown', (event) => {
   if (event.key === 'Escape') closeTeaserModal();
 });
+
+const siteNav = document.querySelector('#site-nav');
+const navLinks = Array.from(document.querySelectorAll('.nav-links a'));
+const navSections = navLinks.map((link) => document.querySelector(link.getAttribute('href'))).filter(Boolean);
+
+function updateNav() {
+  if (!siteNav) return;
+  siteNav.classList.toggle('scrolled', window.scrollY > 8);
+  const marker = window.scrollY + siteNav.offsetHeight + 80;
+  let current = null;
+  navSections.forEach((section) => {
+    if (section.offsetTop <= marker) current = section;
+  });
+  const atBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2;
+  if (atBottom && navSections.length) current = navSections[navSections.length - 1];
+  navLinks.forEach((link) => {
+    link.classList.toggle('active', Boolean(current) && link.getAttribute('href') === `#${current.id}`);
+  });
+}
+
+window.addEventListener('scroll', updateNav, { passive: true });
+window.addEventListener('resize', updateNav);
+updateNav();
